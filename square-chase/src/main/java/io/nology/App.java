@@ -18,7 +18,6 @@ public class App extends Application {
     ArrayList<Square> blocks = new ArrayList<>();
 
     Square block1 = new Square(1);
-
     Square block2 = new Square(1);
     Square block3 = new Square(1);
 

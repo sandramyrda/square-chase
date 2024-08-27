@@ -55,8 +55,13 @@ public class Square {
 
         for (Square sq : allBlocks) {
             if (this.doesItCollide(sq)) {
-                // sq.element.setFill(Color.rgb(255, 0, 0));
+                int g = random.nextInt(255);
+                int b = random.nextInt(255);
+                int r = random.nextInt(200);
+                sq.element.setFill(Color.rgb(r, g, b));
                 sq.generatePosition();
+                this.element.setWidth(this.element.getWidth() + 3);
+                this.element.setHeight(this.element.getHeight() + 3);
             }
         }
     }
